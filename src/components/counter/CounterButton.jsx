@@ -3,8 +3,8 @@ import "./Counter.css";
 
 class CounterButton extends Component {
   // Define the initial state in constructor
-  constructor() {
-    super();
+  //constructor() {
+    //super();
 
     // this.state = {
     //     counter : 0
@@ -12,7 +12,7 @@ class CounterButton extends Component {
 
     // this.increment = this.increment.bind(this)
     // this.decrement = this.decrement.bind(this)
-  }
+  //}
 
   //render = () => {
   render() {
