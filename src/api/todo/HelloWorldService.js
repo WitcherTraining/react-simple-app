@@ -8,13 +8,24 @@ class HelloWorldService {
     }
 
     executeHelloWorldBeanService() {
-        //console.log('executed service')
         return axios.get('http://localhost:8080/hello-world-bean');        
     }
 
     executeHelloWorldPathVariableService(name) {
-        //console.log('executed service')
-        return axios.get(`http://localhost:8080/hello-world/path-variable/${name}`);        
+
+        // let username = 'witcher'
+        // let password = 'dummy'
+
+        //let basicAuthHeader = 'Basic ' + window.btoa(username + ":" + password)
+
+        return axios.get(`http://localhost:8080/hello-world/path-variable/${name}`
+        // , 
+        // {
+        //     headers: {
+        //         authorization: basicAuthHeader
+        //     }
+        // }
+        );        
     }
 }
 
